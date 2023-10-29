@@ -1,0 +1,30 @@
+.Container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+.Container div{
+height: 100px;
+padding: 20px;
+text-align: center;
+}
+
+.red{
+    background-color:red
+}
+.green{
+    background-color:green
+}
+.blue{
+    background-color:blue
+}
+.orange{
+    background-color:orange
+}
+
+@media screen and (max-width: 768px) {
+    .Container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
